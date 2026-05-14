@@ -1,0 +1,81 @@
+let year = Number(prompt("Enter random year"))
+
+if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+    console.log("Leap year")
+} else {
+    console.log("Not Leap")
+}
+
+let x = 5
+
+// Write a js program that checks if a variable student_score is greater than 90. If true, check if 
+// the attendance is greater than 80. If both conditions are true, display"Excellent student", otherwise
+//  display "Good score, but attendance needs improvement"
+
+let student_score = Number(prompt("Enter score"))
+let attendance = Number(prompt("Enter attendance score"))
+
+if (student_score > 90) {
+    if (attendance > 80) {
+        console.log("Excellent student")
+    } else {
+        console.log("Good score but attendance needs improvement")
+    }
+} else {
+    if (attendance > 80) {
+        console.log("Good attendance but score needs improvement")
+    } else {
+        console.log("Needs improvement on score and attendance")
+    }
+}
+
+//Task
+
+//Assignment 1: Create an Array
+// Create an array named colors with the following elements: 'red', 'green', 'blue'.
+let colors = ['red', 'green', 'blue']
+console.log(colors)
+
+
+// Assignment 2: Access and Modify Array Elements
+// Given the array colors, access the second element and change it to 'pink'. Then, display the modified array.
+colors[1] = "pink"
+console.log(colors)
+
+
+// Assignment 3: Determine the Length of an Array
+// Given the array colors, determine its length and store it in a variable lengthOfColors. Then, display lengthOfColors.
+let lengthOfColors = colors.length
+console.log(lengthOfColors)
+
+
+// Assignment 4: Use .pop() Method
+// Given the array colors, use the .pop() method to remove the last element from the array. Then, display the modified array.
+colors.pop()
+console.log(colors)
+
+
+// Assignment 1: Combine Arrays
+// Given two arrays arr1 and arr2, combine them into a single array combinedArray using the .concat() method. 
+// Then, remove the first element from combinedArray using the .shift() method. Finally, display the modified combinedArray.
+let arr1 = [5, "milk", "soda", 8]
+let arr2 = ["sugar", "apple", false, 6]
+let combinedarray = arr1.concat(arr2)
+console.log(combinedarray)
+
+combinedarray.shift()
+console.log(combinedarray)
+
+
+
+// Assignment 2: Extract Subarray
+// Given an array “sourceArray”, extract a subarray “extractedArray” from index 2 to index 4 using the .slice() method. 
+// Then, modify the extractedArray by replacing its elements with 'x', 'y', and 'z' using the .splice() method. 
+// Finally, display both the sourceArray and the modified extractedArray.
+let sourcearray = ["one", "two", "three", "four", "five", "six"]
+let extractedarray = sourcearray.slice(2, 5)
+console.log(extractedarray)
+extractedarray.splice(0, 3, "x", "y", "z")
+
+console.log(extractedarray)
+
